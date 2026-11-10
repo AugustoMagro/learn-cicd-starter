@@ -13,7 +13,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v6
 
-      - name: style
+      - name: Style
         run: test -z $(go fmt ./...)
 
       - name: style
