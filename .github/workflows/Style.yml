@@ -13,9 +13,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v6
 
-      - name: Run local tests
+      - name: style
         run: test -z $(go fmt ./...)
 
-      - name: Run local tests
+      - name: style
         run: test -z $(go fmt ./...)
 
