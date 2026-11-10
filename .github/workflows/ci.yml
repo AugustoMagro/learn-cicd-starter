@@ -20,5 +20,5 @@ jobs:
         run: (exit 0)
 
       - name: Coverage of the code
-        run: got test -cover
+        run: go test -cover
 
