@@ -19,3 +19,6 @@ jobs:
       - name: Force Failure
         run: (exit 0)
 
+      - name: Coverage of the code
+        run: got test -cover
+
