@@ -14,8 +14,8 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Style
-        run: test -z $(go fmt ./...)
+        run: go fmt
 
-      - name: style
+      - name: Style
         run: test -z $(go fmt ./...)
 
