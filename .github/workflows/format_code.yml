@@ -1,0 +1,21 @@
+name: format_code
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v6
+
+      - name: Run local tests
+        run: test -z $(go fmt ./...)
+
+      - name: Run local tests
+        run: test -z $(go fmt ./...)
+
