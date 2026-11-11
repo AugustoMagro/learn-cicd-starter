@@ -8,7 +8,6 @@ import (
 	"net/http"
 	"os"
 	"time"
-	"strings"
 	"strconv"
 
 	"github.com/go-chi/chi"
@@ -102,13 +101,7 @@ func main() {
 		ReadTimeout: 3 * time.Second,
 	}
 
-	
-
-	log.Printf("Serving on port: %s", portNum)
+	log.Printf("Serving on port: %d", portNum)
 	log.Fatal(srv.ListenAndServe())
 }
 
-func sanitizeLog(s string) string {
-    s = strings.ReplaceAll(s, "\n", "")
-    return strings.ReplaceAll(s, "\r", "")
-}
